@@ -1,0 +1,20 @@
+1. Ultima versão do nodejs -> site
+2. Instalar a ultima versão do npm -> npm install npm@latest -g
+3. criar a app -> npx create-react-app globomantics (globomantics é a app a criar)
+4. Production mode -> na pasta do projecto npm run build -> estes comandos estão na raiz - package.json -> parecido com o automation e o msbuild -> cria proj para instalação
+5. npm start -> inicia app -> browser
+6. Debugger -> escolher o chrome e alterar a porta para 3000
+7. Instalar react developer tools nas extensões do chrome
+8. Instalar o bootstrap v. 4 -> npm install bootstrap@4
+
+
+
+Visual Studio Code:
+- Extensions:
+	- Debugger for chrome
+	- Simple react snippets
+
+Notas:
+- node_modules:
+	- Webpack - criar o pack dos nossos modulos ?
+	- Babel -> traduz o jsx
