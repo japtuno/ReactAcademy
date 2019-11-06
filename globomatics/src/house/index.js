@@ -2,6 +2,7 @@ import React, { Component } from "react"; ////imrc
 import "./house.css";
 import Inquiry from "./inquiry";
 import emailLogo from "./Email.png";
+import PropTypes from "prop-types";
 
 ////cc
 class House extends Component {
@@ -51,4 +52,5 @@ class House extends Component {
   }
 }
 
+House.propTypes = {house: PropTypes.object.isRequired}
 export default House;

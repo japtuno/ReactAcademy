@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./main-page.css";
-import Header from "./header";
-import FeaturedHouse from "./featured-house";
-import HouseFilter from "./house-filter";
-import SearchResult from "../search-results";
-import House from "../house";
+import AppPresentation from "./app-presentation";
 
 class App extends Component {
   // // constructor(props) {
@@ -60,34 +55,10 @@ class App extends Component {
   };
 
   render() {
-    let activeContainer = null;
-    if (this.state.country) {
-      activeContainer = (
-        <SearchResult
-          country={this.state.country}
-          filteredHouses={this.state.filteredHouses}
-          setActiveHouse={this.setActiveHouse}
-        />
-      );
-    }
-
-    if (this.state.activeHouse) {
-      activeContainer = <House house={this.state.activeHouse} />;
-    }
-
-    if (!activeContainer) {
-      activeContainer = <FeaturedHouse house={this.state.featuredHouse} />;
-    }
-
-    return (
-      <div className="container">
-        <Header subtitle="Providing houses all over the world" />
-        <HouseFilter
-          countries={this.state.countries}
-          filterHouses={this.filterHouses}
-        />
-        {activeContainer}
-      </div>
+    return(
+      <AppPresentation country={this.state.country} filteredHouses={this.state.filteredHouses} 
+      setActiveHouse={this.setActiveHouse} activeHouse={this.state.activeHouse} featuredHouse={this.state.featuredHouse} 
+      countries={this.state.countries} filterHouses={this.filterHouses} />
     );
   }
 }

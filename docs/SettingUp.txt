@@ -7,6 +7,7 @@
 7. Instalar react developer tools nas extensões do chrome
 8. Instalar o bootstrap v. 4 -> npm install bootstrap@4
 
+9. Instalar prop types -> npm install --save prop-types -> validação de tipos
 
 
 Visual Studio Code:
