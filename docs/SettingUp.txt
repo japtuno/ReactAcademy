@@ -8,7 +8,19 @@
 8. Instalar o bootstrap v. 4 -> npm install bootstrap@4
 
 9. Instalar prop types -> npm install --save prop-types -> validação de tipos
+10. instalar routing -> npm install --save react-router-dom
 
+11. Install typescript -> npm install -g typescript | https://www.typescriptlang.org/index.html
+12. criar o js a partir de type script -> tsc greeter.ts
+
+13. Bundle | https://webpack.js.org/guides/getting-started/
+
+14. Nota sobre npm
+When installing a package that will be bundled into your production bundle, you should use npm install --save. If you're installing a package for development purposes (e.g. a linter, testing libraries, etc.) then you should use npm install --save-dev. More information can be found in the npm documentation.
+
+15. npx webpack -> cria os ficheiros para o dist
+	com config file -> npx webpack --config webpack.config.js
+	Se configurado action no package.config -> npm run build
 
 Visual Studio Code:
 - Extensions:
